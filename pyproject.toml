@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "keep-it-markdown"
+version = "0.4.3"
+description = "Keep-it-markdown or KIM converts Google Keep notes to markdown using the unofficial Python Keep API without having to use Google Takeout to export notes first. The script will execute on Windows, MacOS or Linux."
+authors = ["don.sudduth@gmail.com","Olle Landin <olle@keypunch.se>"]
+license = "The overall goal is to utilize Google Keep as an easy way to capture raw notes on all devices or additionally using the browswer plugin. Then, notes can be queried for export to markdown files directly into notetaking apps such as Obsidian and/or Notion, or used directly with Typora.n"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+gkeepapi = "^0.14.2"
+keyring = "^23.6.0"
+click = "^8.1.3"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+pytest = "^7.1.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
